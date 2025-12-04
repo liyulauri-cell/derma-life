@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaLife Hair Oil | Natural Herbal Hair Oil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2a6b5c;
+            --secondary: #d4a574;
+            --light: #f8f5f0;
+            --dark: #1a1a1a;
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+        
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo-text span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        nav a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            left: 0;
+            bottom: -5px;
+            transition: var(--transition);
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: #1e5247;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(42, 107, 92, 0.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            background: linear-gradient(to right, #ffffff 50%, #f8f5f0 50%);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .hero-content {
+            flex: 1;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            max-height: 500px;
+            object-fit: cover;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .tagline {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .language-toggle {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .lang-btn {
+            background: #f0f0f0;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .amharic-text {
+            font-family: 'Arial', sans-serif;
+            direction: ltr;
+        }
+        
+        /* Sections */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content-block {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .content-block h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+        }
+        
+        .dual-language {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .lang-column {
+            padding: 15px;
+        }
+        
+        .lang-column h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .benefit-item i {
+            color: var(--secondary);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        /* Compact Ingredients Section */
+        .ingredients-compact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .ingredient-compact-item {
+            text-align: center;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+        
+        .ingredient-compact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .ingredient-compact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        
+        .ingredient-compact-item h5 {
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+        
+        .how-to-use {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .how-to-use img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .steps {
+            flex: 1;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            background: #f8f8f8;
+            min-height: 300px;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
+            background-size: 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-weight: bold;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            margin-top: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
+            margin-right: 15px;
+            font-size: 1.2rem;
+            width: 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo .logo-text {
+            color: white;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .design-credit {
+            text-align: center;
+            margin-top: 10px;
+            color: var(--secondary);
+            font-style: italic;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-container, .how-to-use, .contact-container {
+                flex-direction: column;
+            }
+            
+            .dual-language {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <div class="logo-text">DermaLife<span>Hair Oil</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="language-toggle">
+                    <button class="lang-btn active" onclick="showLanguage('en')">English</button>
+                    <button class="lang-btn" onclick="showLanguage('am')">አማርኛ</button>
+                </div>
+                
+                <span class="tagline">100% Natural & Organic</span>
+                <h1>Natural Herbal Hair Oil</h1>
+                
+                <div id="english-hero">
+                    <p>Made with Pure Herbs, Love, and Science. Restore shine. Strengthen roots. Grow healthier hair — naturally.</p>
+                </div>
+                
+                <div id="amharic-hero" class="amharic-text" style="display: none;">
+                    <p>በንፁህ እፅዋት፣ በፍቅር እና በሳይንስ የተሰራ የፀጉርዎን ብርሃን መመለስ፣ ሥሮችን መጠንከር፣ ፀጉር በተፈጥሯዊነት እንዲያድግ ርዳት ይደርጋል።</p>
+                </div>
+                
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="hero.jpg.png" alt="DermaLife Hair Oil">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-block container">
+        <div class="section-title">
+            <h2>About Our Product</h2>
+        </div>
+        
+        <div class="dual-language">
+            <div class="lang-column">
+                <h4>English</h4>
+                <p>Our herbal hair oil is crafted from time-honored traditional herbs combined with modern extraction methods. Safe for all hair types — especially for dry, damaged, or thinning hair.</p>
+            </div>
+            <div class="lang-column amharic-text">
+                <h4>አማርኛ</h4>
+                <p>የእኛ የፀጉር ዘይት ቅባት ታላቅ ታሪካዊ እፅዋትን ከዘመናዊ ቴክኒኮች ጋር በመቀላቀል ተዘጋጅቷል። በተለይም ለደረቁ፣ ለተጎዱ ወይም ለሚቀነሱ ፀጉሮች እና ለሁሉም የፀጉር አይነት ተስማሚ ነው፡፡</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="content-block container">
+        <div class="section-title">
+            <h2>Benefits</h2>
+        </div>
+        
+        <div class="dual-language">
+            <div class="lang-column">
+                <h4>Key Benefits</h4>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Stimulates fast hair growth</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Strengthens weak & thinning hair</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Stops breakage and split ends</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Nourishes dry scalp</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Adds natural shine & softness</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>100% natural, chemical-free</div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-column amharic-text">
+                <h4>ጠቃሚ ጥቅሞች</h4>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>ፀጉር ፈጣን እንዲያድግ ይረዳል</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>ለደካማ እና የሚቀነስ ፀጉር ያጠናክራል</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>መሰባበርን እና የጫፍ መሰነጣጠቅን ይቆማል</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>ደረቅ ቆዳ ያወዛል</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>ተፈጥሯዊ ብርሃን፤ ዞማነትን እና ለስላሳነት ያክላል</div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>100% ተፈጥሯዊ እና ኬሚካል የሌለው</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section (Minimized) -->
+    <section id="ingredients" class="content-block container">
+        <div class="section-title">
+            <h2>Natural Ingredients</h2>
+            <p>Premium quality natural oils and herbs</p>
+        </div>
+        
+        <div class="ingredients-compact">
+            <div class="ingredient-compact-item">
+                <i class="fas fa-leaf"></i>
+                <h5>Rosemary Oil</h5>
+                <small>ሮዝሜሪ</small>
+            </div>
+            <div class="ingredient-compact-item">
+                <i class="fas fa-seedling"></i>
+                <h5>Fenugreek Oil</h5>
+                <small>አብሽ ዘይት</small>
+            </div>
+            <div class="ingredient-compact-item">
+                <i class="fas fa-circle"></i>
+                <h5>Black Seed Oil</h5>
+                <small>ጥቁር አዝሙድ</small>
+            </div>
+            <div class="ingredient-compact-item">
+                <i class="fas fa-apple-alt"></i>
+                <h5>Amla Oil</h5>
+                <small>የዱባ ፍሬ</small>
+            </div>
+            <div class="ingredient-compact-item">
+                <i class="fas fa-coconut"></i>
+                <h5>Coconut Oil</h5>
+                <small>የኮኮናት ዘይት</small>
+            </div>
+            <div class="ingredient-compact-item">
+                <i class="fas fa-tint"></i>
+                <h5>Castor Oil</h5>
+                <small>የጉሎ ዘይት</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="content-block container">
+        <div class="section-title">
+            <h2>How to Use</h2>
+        </div>
+        
+        <div class="how-to-use">
+            <img src="herbs.jpg.jpg" alt="DermaLife Hair Oil Instructions">
+            <div class="steps">
+                <div class="dual-language">
+                    <div class="lang-column">
+                        <h4>English Instructions</h4>
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>Apply a small amount to your scalp and hair.</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>Massage gently for 2–3 minutes.</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>Use 3–4 times per week for best results.</div>
+                        </div>
+                    </div>
+                    <div class="lang-column amharic-text">
+                        <h4>የመጠቀም መመሪያ</h4>
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>በትንሽ መጠን በራስና በፀጉር ላይ ይቀበሉ።</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>ለ2–3 ደቂቃ ቀስ እያሉ ማሸት።</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>ምርጥ ውጤት ለማግኘት በሳምንት 3–4 ጊዜ ይጠቀሙት።</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Info Section -->
+    <section class="content-block container">
+        <h3>Promotes Hair Growth</h3>
+        <div class="dual-language">
+            <div class="lang-column">
+                <p>Stimulates Blood Circulation To The Scalp Especially From Rosemary, Black Seed And Castor Oils. Strengthens Hair Roots And Helps New Hair Grow Thicker And Faster.</p>
+            </div>
+            <div class="lang-column amharic-text">
+                <p>የፀጉር እድገትን እና የደም ዝዉዉርን በማፋጠን በተለይም ሮዝመሪ፣ጥቁር አዝሙድ፣እና የጉሎ ዘይት ዘለላው ጠንካራ እና ወፍራም እድገቱም ፈጣን እንዲሆን ያደርገዋል፡፡</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <img src="thumb.jpg" alt="DermaLife Poster" style="max-width: 300px; border-radius: 10px; margin: 0 auto; display: block;">
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>See the quality and results of DermaLife Hair Oil</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Your Images -->
+                <div class="gallery-item">
+                    <img src="hero.jpg.png" alt="DermaLife Hair Oil Bottle">
+                    <div class="gallery-caption">
+                        <h4>DermaLife Hair Oil</h4>
+                        <p>Premium Quality Product</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="herbs.jpg.jpg" alt="Natural Herbal Ingredients">
+                    <div class="gallery-caption">
+                        <h4>Natural Ingredients</h4>
+                        <p>Pure Herbal Formula</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img3.jpg" alt="Product Information">
+                    <div class="gallery-caption">
+                        <h4>Product Details</h4>
+                        <p>All Information Included</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="poster.jpg.jpg" alt="Promotional Poster">
+                    <div class="gallery-caption">
+                        <h4>Promotional Poster</h4>
+                        <p>Official Product Poster</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="thumb.jpg" alt="Product Thumbnail">
+                    <div class="gallery-caption">
+                        <h4>Product Thumbnail</h4>
+                        <p>Compact View</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img4.jpg.jpg" alt="DermaLife Branding">
+                    <div class="gallery-caption">
+                        <h4>Branding</h4>
+                        <p>DermaLife Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>Manufactured by: Derma Life Manufacturing, Addis Ababa, Ethiopia</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>Phone: +251-980 690 907</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>Instagram: @DermaLifehairoil4</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-tiktok"></i>
+                            <div>TikTok: @dermalife44</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>Addis Ababa, Ethiopia</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info amharic-text">
+                    <h3>አግኙን</h3>
+                    <p>የሚመረትበት ቦታ: ደርማ ላይፍ ማኑፋክቸሪንግ፣ አዲስ አበባ፣ ኢትዮጵያ</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>ስልክ: +251-980 690 907</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>ኢንስታግራም: @DermaLifehairoil4</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-tiktok"></i>
+                            <div>ቲክቶክ: @dermalife44</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>አዲስ አበባ፣ ኢትዮጵያ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="logo-text">DermaLife<span>Hair Oil</span></div>
+                    </div>
+                    <p>Transform your hair naturally with our Ayurvedic-inspired formula that combines ancient wisdom with modern science.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#ingredients">Ingredients</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Our Promise</h3>
+                    <p>100% Natural Ingredients</p>
+                    <p>No Harmful Chemicals</p>
+                    <p>Dermatologically Tested</p>
+                    <p>Made with Care in Ethiopia</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 DermaLife Hair Oil. All rights reserved.</p>
+                <div class="design-credit">Website design by Le&La Advertising</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language toggle functionality
+        function showLanguage(lang) {
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            if (lang === 'en') {
+                document.querySelectorAll('.lang-btn')[0].classList.add('active');
+                // Show English content
+                document.getElementById('english-hero').style.display = 'block';
+                document.getElementById('amharic-hero').style.display = 'none';
+            } else {
+                document.querySelectorAll('.lang-btn')[1].classList.add('active');
+                // Show Amharic content
+                document.getElementById('english-hero').style.display = 'none';
+                document.getElementById('amharic-hero').style.display = 'block';
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
