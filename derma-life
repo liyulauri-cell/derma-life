@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DermaLife Hair Oil | Natural Herbal Hair Oil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Removed external FontAwesome -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         
         :root {
@@ -270,6 +270,8 @@
             color: var(--secondary);
             margin-right: 10px;
             margin-top: 5px;
+            font-style: normal;
+            font-weight: bold;
         }
         
         /* Compact Ingredients Section */
@@ -298,6 +300,7 @@
             font-size: 1.5rem;
             color: var(--primary);
             margin-bottom: 8px;
+            font-style: normal;
         }
         
         .ingredient-compact-item h5 {
@@ -381,18 +384,6 @@
             background: #f9f9f9;
         }
         
-        .image-placeholder {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(45deg, #f0f0f0 25%, #e0e0e0 25%, #e0e0e0 50%, #f0f0f0 50%, #f0f0f0 75%, #e0e0e0 75%);
-            background-size: 20px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-weight: bold;
-        }
-        
         /* Contact Section */
         .contact-section {
             padding: 80px 0;
@@ -429,6 +420,7 @@
             margin-right: 15px;
             font-size: 1.2rem;
             width: 30px;
+            font-style: normal;
         }
         
         /* Footer */
@@ -489,6 +481,7 @@
             border-radius: 50%;
             color: white;
             transition: var(--transition);
+            text-decoration: none;
         }
         
         .social-icons a:hover {
@@ -556,9 +549,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-spa"></i>
-                </div>
+                <div class="logo-icon">🌿</div>
                 <div class="logo-text">DermaLife<span>Hair Oil</span></div>
             </div>
             <nav>
@@ -598,7 +589,7 @@
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
             <div class="hero-image">
-                <img src="hero.jpg.png" alt="DermaLife Hair Oil">
+                <img src="hero.jpg.png" alt="DermaLife Hair Oil" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"400\"><rect width=\"100%\" height=\"100%\" fill=\"%232a6b5c\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"24\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">DermaLife Hair Oil</text></svg>'">
             </div>
         </div>
     </section>
@@ -632,27 +623,27 @@
                 <h4>Key Benefits</h4>
                 <div class="benefits-grid">
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>Stimulates fast hair growth</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>Strengthens weak & thinning hair</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>Stops breakage and split ends</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>Nourishes dry scalp</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>Adds natural shine & softness</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>100% natural, chemical-free</div>
                     </div>
                 </div>
@@ -661,27 +652,27 @@
                 <h4>ጠቃሚ ጥቅሞች</h4>
                 <div class="benefits-grid">
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>ፀጉር ፈጣን እንዲያድግ ይረዳል</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>ለደካማ እና የሚቀነስ ፀጉር ያጠናክራል</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>መሰባበርን እና የጫፍ መሰነጣጠቅን ይቆማል</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>ደረቅ ቆዳ ያወዛል</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>ተፈጥሯዊ ብርሃን፤ ዞማነትን እና ለስላሳነት ያክላል</div>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
+                        <i>✓</i>
                         <div>100% ተፈጥሯዊ እና ኬሚካል የሌለው</div>
                     </div>
                 </div>
@@ -698,32 +689,32 @@
         
         <div class="ingredients-compact">
             <div class="ingredient-compact-item">
-                <i class="fas fa-leaf"></i>
+                <i>🌿</i>
                 <h5>Rosemary Oil</h5>
                 <small>ሮዝሜሪ</small>
             </div>
             <div class="ingredient-compact-item">
-                <i class="fas fa-seedling"></i>
+                <i>🌱</i>
                 <h5>Fenugreek Oil</h5>
                 <small>አብሽ ዘይት</small>
             </div>
             <div class="ingredient-compact-item">
-                <i class="fas fa-circle"></i>
+                <i>⚫</i>
                 <h5>Black Seed Oil</h5>
                 <small>ጥቁር አዝሙድ</small>
             </div>
             <div class="ingredient-compact-item">
-                <i class="fas fa-apple-alt"></i>
+                <i>🍎</i>
                 <h5>Amla Oil</h5>
                 <small>የዱባ ፍሬ</small>
             </div>
             <div class="ingredient-compact-item">
-                <i class="fas fa-coconut"></i>
+                <i>🥥</i>
                 <h5>Coconut Oil</h5>
                 <small>የኮኮናት ዘይት</small>
             </div>
             <div class="ingredient-compact-item">
-                <i class="fas fa-tint"></i>
+                <i>💧</i>
                 <h5>Castor Oil</h5>
                 <small>የጉሎ ዘይት</small>
             </div>
@@ -737,7 +728,7 @@
         </div>
         
         <div class="how-to-use">
-            <img src="herbs.jpg.jpg" alt="DermaLife Hair Oil Instructions">
+            <img src="herbs.jpg.jpg" alt="DermaLife Hair Oil Instructions" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"300\"><rect width=\"100%\" height=\"100%\" fill=\"%23d4a574\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"20\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">How to Use Instructions</text></svg>'">
             <div class="steps">
                 <div class="dual-language">
                     <div class="lang-column">
@@ -788,7 +779,7 @@
         </div>
         
         <div style="margin-top: 30px; text-align: center;">
-            <img src="thumb.jpg" alt="DermaLife Poster" style="max-width: 300px; border-radius: 10px; margin: 0 auto; display: block;">
+            <img src="thumb.jpg" alt="DermaLife Poster" style="max-width: 300px; border-radius: 10px; margin: 0 auto; display: block;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"300\"><rect width=\"100%\" height=\"100%\" fill=\"%232a6b5c\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"18\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">DermaLife Poster</text></svg>'">
         </div>
     </section>
 
@@ -803,7 +794,7 @@
             <div class="gallery-grid">
                 <!-- Your Images -->
                 <div class="gallery-item">
-                    <img src="hero.jpg.png" alt="DermaLife Hair Oil Bottle">
+                    <img src="hero.jpg.png" alt="DermaLife Hair Oil Bottle" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%232a6b5c\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Main Product</text></svg>'">
                     <div class="gallery-caption">
                         <h4>DermaLife Hair Oil</h4>
                         <p>Premium Quality Product</p>
@@ -811,7 +802,7 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="herbs.jpg.jpg" alt="Natural Herbal Ingredients">
+                    <img src="herbs.jpg.jpg" alt="Natural Herbal Ingredients" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%23d4a574\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Ingredients</text></svg>'">
                     <div class="gallery-caption">
                         <h4>Natural Ingredients</h4>
                         <p>Pure Herbal Formula</p>
@@ -819,7 +810,7 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="img3.jpg" alt="Product Information">
+                    <img src="img3.jpg" alt="Product Information" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%232a6b5c\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Product Info</text></svg>'">
                     <div class="gallery-caption">
                         <h4>Product Details</h4>
                         <p>All Information Included</p>
@@ -827,7 +818,7 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="poster.jpg.jpg" alt="Promotional Poster">
+                    <img src="poster.jpg.jpg" alt="Promotional Poster" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%23d4a574\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Poster</text></svg>'">
                     <div class="gallery-caption">
                         <h4>Promotional Poster</h4>
                         <p>Official Product Poster</p>
@@ -835,7 +826,7 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="thumb.jpg" alt="Product Thumbnail">
+                    <img src="thumb.jpg" alt="Product Thumbnail" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%232a6b5c\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Thumbnail</text></svg>'">
                     <div class="gallery-caption">
                         <h4>Product Thumbnail</h4>
                         <p>Compact View</p>
@@ -843,7 +834,7 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="img4.jpg.jpg" alt="DermaLife Branding">
+                    <img src="img4.jpg.jpg" alt="DermaLife Branding" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"200\"><rect width=\"100%\" height=\"100%\" fill=\"%23d4a574\"/><text x=\"50%\" y=\"50%\" font-family=\"Arial\" font-size=\"16\" fill=\"white\" text-anchor=\"middle\" dy=\".3em\">Branding</text></svg>'">
                     <div class="gallery-caption">
                         <h4>Branding</h4>
                         <p>DermaLife Identity</p>
@@ -867,19 +858,19 @@
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                            <i>📞</i>
                             <div>Phone: +251-980 690 907</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-instagram"></i>
+                            <i>📷</i>
                             <div>Instagram: @DermaLifehairoil4</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-tiktok"></i>
+                            <i>🎵</i>
                             <div>TikTok: @dermalife44</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i>📍</i>
                             <div>Addis Ababa, Ethiopia</div>
                         </div>
                     </div>
@@ -891,19 +882,19 @@
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                            <i>📞</i>
                             <div>ስልክ: +251-980 690 907</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-instagram"></i>
+                            <i>📷</i>
                             <div>ኢንስታግራም: @DermaLifehairoil4</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-tiktok"></i>
+                            <i>🎵</i>
                             <div>ቲክቶክ: @dermalife44</div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i>📍</i>
                             <div>አዲስ አበባ፣ ኢትዮጵያ</div>
                         </div>
                     </div>
@@ -918,17 +909,15 @@
             <div class="footer-container">
                 <div class="footer-column">
                     <div class="footer-logo logo">
-                        <div class="logo-icon">
-                            <i class="fas fa-spa"></i>
-                        </div>
+                        <div class="logo-icon">🌿</div>
                         <div class="logo-text">DermaLife<span>Hair Oil</span></div>
                     </div>
                     <p>Transform your hair naturally with our Ayurvedic-inspired formula that combines ancient wisdom with modern science.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TT</a>
+                        <a href="#">YT</a>
                     </div>
                 </div>
                 
